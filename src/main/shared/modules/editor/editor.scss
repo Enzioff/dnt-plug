@@ -1,0 +1,26 @@
+.editor {
+  p {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    @include text-big($white);
+
+    &.small {
+      @include text-middle($white);
+    }
+  }
+
+  strong {
+    @include h4($white);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}

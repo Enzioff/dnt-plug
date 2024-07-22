@@ -1,0 +1,27 @@
+.footer {
+  position: relative;
+  padding-top: 105px;
+  padding-bottom: 57px;
+  background-color: $night;
+
+  &__feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  &__meta {
+    display: grid;
+    grid-template-columns: 228px 228px;
+    gap: 60px 45px;
+  }
+
+  &__decor {
+    position: absolute;
+    right: 61%;
+    bottom: 0;
+    display: flex;
+    width: 749px;
+    height: 888px;
+  }
+}

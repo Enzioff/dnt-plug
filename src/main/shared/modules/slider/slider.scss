@@ -1,0 +1,50 @@
+.slider {
+
+  &__header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 21px;
+    background-color: $red;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &--prev {
+      transform: rotate(180deg);
+    }
+
+    &--disabled {
+      pointer-events: none;
+      background-color: #212121;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &--animate {
+    .swiper-slide {
+      width: auto;
+    }
+    .swiper-wrapper {
+      transition-timing-function: linear;
+    }
+  }
+}

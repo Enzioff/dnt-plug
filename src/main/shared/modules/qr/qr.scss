@@ -1,0 +1,61 @@
+.qr {
+  position: fixed;
+  left: 80px;
+  bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 226px;
+  padding: 14px 14px 20px;
+  background-color: $red;
+  z-index: 2;
+  transform: translateX(-150%);
+  transition: transform .2s linear;
+
+  &.active {
+    transform: translateX(0);
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+
+    img {
+      display: block;
+      width: 184px;
+      height: 185px;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__close {
+    display: flex;
+    cursor: pointer;
+    transition: .2s linear;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__text {
+    font-family: $font-accent;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+  }
+}

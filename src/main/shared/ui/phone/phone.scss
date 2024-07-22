@@ -1,0 +1,12 @@
+.phone {
+  display: flex;
+  padding: 10px 19px;
+  background-color: $black;
+  box-shadow: 0 9px 24px 0 #00000040;
+
+  font-family: $font-accent;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  color: $white;
+}

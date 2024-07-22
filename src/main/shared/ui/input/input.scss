@@ -1,0 +1,15 @@
+.input {
+  display: flex;
+  padding: 14px;
+
+  font-family: $font-accent;
+  font-size: 16px;
+  font-weight: 300;
+  color: $white;
+
+  border-bottom: 1px solid $gray;
+
+  &::placeholder {
+    color: $gray;
+  }
+}

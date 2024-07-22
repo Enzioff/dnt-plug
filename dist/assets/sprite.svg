@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>
+    .sprite-symbol-usage {display: none;}
+    .sprite-symbol-usage:target {display: inline;}
+  </style><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-up">
+<path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-chevron">
+<path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-cross">
+<path d="M17 7L7 17M7 7L17 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 63 33" id="icon-tie">
+<path d="M60.8503 26.3836L57.0482 1.56916L32.0682 19.6087L60.8503 26.3836Z" />
+<path d="M60.8503 26.3836L57.0482 1.56916L32.0682 19.6087L60.8503 26.3836Z" />
+<path d="M60.8503 26.3836L57.0482 1.56916L32.0682 19.6087L60.8503 26.3836Z" />
+<path d="M13.2382 32.6256L5.07876 8.75991L36.6258 17.8266L13.2382 32.6256Z" />
+<path d="M13.2382 32.6256L5.07876 8.75991L36.6258 17.8266L13.2382 32.6256Z" />
+<path d="M13.2382 32.6256L5.07876 8.75991L36.6258 17.8266L13.2382 32.6256Z" />
+<ellipse cx="7.41272" cy="6.39027" rx="7.41272" ry="6.39027" transform="matrix(-0.998164 -0.0605662 -0.0605662 0.998164 42.7444 12.4808)" />
+</symbol></defs><use id="icon-arrow-up-usage" xlink:href="#icon-arrow-up" class="sprite-symbol-usage" /><use id="icon-chevron-usage" xlink:href="#icon-chevron" class="sprite-symbol-usage" /><use id="icon-cross-usage" xlink:href="#icon-cross" class="sprite-symbol-usage" /><use id="icon-tie-usage" xlink:href="#icon-tie" class="sprite-symbol-usage" /></svg>

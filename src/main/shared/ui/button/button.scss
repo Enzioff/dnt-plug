@@ -1,0 +1,26 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 21px;
+
+  font-family: $font-accent;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28.8px;
+
+  background-color: $red;
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &__icon {
+    display: flex;
+    width: 24px;
+    height: 24px;
+  }
+}

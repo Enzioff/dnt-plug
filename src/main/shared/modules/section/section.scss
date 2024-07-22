@@ -1,0 +1,16 @@
+.section {
+  &--bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--intro {
+    min-height: 1080px;
+    max-height: 1080px;
+    background-image: url("../assets/images/intro-bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
