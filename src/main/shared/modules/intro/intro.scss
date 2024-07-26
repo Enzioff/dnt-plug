@@ -5,14 +5,27 @@
   padding-top: 270px;
   height: 100%;
 
+  @include r($mobile) {
+    padding-top: 190px;
+  }
+
   &__title {
     font-size: 74px;
     font-weight: 400;
     line-height: 74px;
     color: $white;
 
+    @include r($mobile) {
+      font-size: 37px;
+      line-height: 37px;
+    }
+
     &--top {
       margin-bottom: 18px;
+
+      @include r($mobile) {
+        margin-bottom: 12px;
+      }
     }
 
     &--middle {
@@ -21,6 +34,13 @@
       justify-content: center;
       padding: 27px 37px;
       background-color: $blue;
+
+      @include r($mobile) {
+        padding: 10px;
+        margin-left: -10px;
+        margin-right: -10px;
+        justify-content: flex-start;
+      }
     }
 
     &--bottom {
@@ -35,6 +55,12 @@
       padding: 27px 19px;
       background-color: $red;
       transform: rotate(-6.92deg);
+
+      @include r($mobile) {
+        top: -12px;
+        left: 5px;
+        padding: 17px 21px;
+      }
     }
   }
 
@@ -59,6 +85,10 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 22.4px;
+
+    @include r($mobile) {
+      display: none;
+    }
   }
 
   &__picture {
@@ -67,6 +97,12 @@
     left: -152px;
     pointer-events: none;
     z-index: 1;
+
+    @include r($mobile) {
+      top: 133px;
+      left: -85px;
+      width: 492px;
+    }
   }
 
   &__abstract {
@@ -76,5 +112,11 @@
     transform: rotate(6.71deg);
     pointer-events: none;
     z-index: 0;
+
+    @include r($mobile) {
+      top: -241px;
+      right: -143px;
+      width: 801px;
+    }
   }
 }

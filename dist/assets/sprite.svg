@@ -1,12 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style>
     .sprite-symbol-usage {display: none;}
     .sprite-symbol-usage:target {display: inline;}
-  </style><symbol viewBox="0 0 24 24" fill="none" id="icon-arrow-up">
-<path d="M7 17L17 7M17 7H7M17 7V17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-chevron">
-<path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+  </style><symbol viewBox="0 0 24 24" id="icon-arrow-up">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7 8C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6H17C17.5523 6 18 6.44772 18 7V17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17V9.41421L7.70711 17.7071C7.31658 18.0976 6.68342 18.0976 6.29289 17.7071C5.90237 17.3166 5.90237 16.6834 6.29289 16.2929L14.5858 8H7Z" />
+</symbol><symbol viewBox="0 0 24 24" id="icon-chevron">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 5.29289C8.68342 4.90237 9.31658 4.90237 9.70711 5.29289L15.7071 11.2929C16.0976 11.6834 16.0976 12.3166 15.7071 12.7071L9.70711 18.7071C9.31658 19.0976 8.68342 19.0976 8.29289 18.7071C7.90237 18.3166 7.90237 17.6834 8.29289 17.2929L13.5858 12L8.29289 6.70711C7.90237 6.31658 7.90237 5.68342 8.29289 5.29289Z" />
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-cross">
 <path d="M17 7L7 17M7 7L17 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol><symbol viewBox="0 0 32 33" fill="none" id="icon-gift">
+<path d="M5.33337 17.5951C5.33337 16.9903 5.82367 16.5 6.42848 16.5H25.5716C26.1764 16.5 26.6667 16.9903 26.6667 17.5951V26.3098C26.6667 27.5194 25.6861 28.5 24.4765 28.5H7.52359C6.31397 28.5 5.33337 27.5194 5.33337 26.3098V17.5951Z" stroke="white" stroke-width="1.5" />
+<rect x="4" y="11.1667" width="24" height="5.33333" rx="1.09511" stroke="white" stroke-width="1.5" />
+<path d="M7.09264 9.21688C5.38396 6.08312 9.14295 3.57627 12.5601 4.82962C15.4737 5.89827 15.9293 8.76896 15.9911 10.5501C16.0016 10.8523 15.7552 11.0968 15.4528 11.1016C12.1368 11.1543 8.38769 11.592 7.09264 9.21688Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+<path d="M24.9074 9.21688C26.616 6.08312 22.8571 3.57627 19.4399 4.82962C16.5263 5.89827 16.0707 8.76896 16.0089 10.5501C15.9984 10.8523 16.2448 11.0968 16.5472 11.1016C19.8632 11.1543 23.6123 11.592 24.9074 9.21688Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+<path d="M16 11.1667V28.5" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+</symbol><symbol viewBox="0 0 43 42" fill="none" id="icon-tel">
+<path d="M25.6556 7C29.9764 7.97614 31.4701 9.57569 32.6556 14" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+<path d="M25.6556 3.5C31.9556 3.5 36.1556 9.22727 36.1556 14" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+<rect x="11" y="10.5" width="17.5" height="28" rx="2.5" stroke="white" stroke-width="1.5" />
+<path d="M16.9714 11.9429L16.652 11.304C16.4673 10.9346 16.7359 10.5 17.1489 10.5H22.3511C22.7641 10.5 23.0327 10.9346 22.848 11.304L22.5286 11.9429C22.4344 12.1311 22.2421 12.25 22.0316 12.25H17.4684C17.2579 12.25 17.0656 12.1311 16.9714 11.9429Z" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+<path d="M16.25 35L23.25 35" stroke="white" stroke-width="1.5" stroke-linecap="round" />
 </symbol><symbol viewBox="0 0 63 33" id="icon-tie">
 <path d="M60.8503 26.3836L57.0482 1.56916L32.0682 19.6087L60.8503 26.3836Z" />
 <path d="M60.8503 26.3836L57.0482 1.56916L32.0682 19.6087L60.8503 26.3836Z" />
@@ -15,4 +27,4 @@
 <path d="M13.2382 32.6256L5.07876 8.75991L36.6258 17.8266L13.2382 32.6256Z" />
 <path d="M13.2382 32.6256L5.07876 8.75991L36.6258 17.8266L13.2382 32.6256Z" />
 <ellipse cx="7.41272" cy="6.39027" rx="7.41272" ry="6.39027" transform="matrix(-0.998164 -0.0605662 -0.0605662 0.998164 42.7444 12.4808)" />
-</symbol></defs><use id="icon-arrow-up-usage" xlink:href="#icon-arrow-up" class="sprite-symbol-usage" /><use id="icon-chevron-usage" xlink:href="#icon-chevron" class="sprite-symbol-usage" /><use id="icon-cross-usage" xlink:href="#icon-cross" class="sprite-symbol-usage" /><use id="icon-tie-usage" xlink:href="#icon-tie" class="sprite-symbol-usage" /></svg>
+</symbol></defs><use id="icon-arrow-up-usage" xlink:href="#icon-arrow-up" class="sprite-symbol-usage" /><use id="icon-chevron-usage" xlink:href="#icon-chevron" class="sprite-symbol-usage" /><use id="icon-cross-usage" xlink:href="#icon-cross" class="sprite-symbol-usage" /><use id="icon-gift-usage" xlink:href="#icon-gift" class="sprite-symbol-usage" /><use id="icon-tel-usage" xlink:href="#icon-tel" class="sprite-symbol-usage" /><use id="icon-tie-usage" xlink:href="#icon-tie" class="sprite-symbol-usage" /></svg>

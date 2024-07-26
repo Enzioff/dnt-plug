@@ -1,29 +1,32 @@
 <footer class="footer">
     <div class="container">
         <div class="columns">
-            <div class="columns__col-1"></div>
-            <div class="columns__col-5">
+            <div class="columns__col-1 mob-hidden"></div>
+            <div class="columns__col-5 columns__col-mob-4 order-mob--2">
                 <picture class="footer__picture">
                     <img src="./assets/images/footer-decor.svg" alt="">
                 </picture>
             </div>
-            <div class="columns__col-1"></div>
-            <div class="columns__col-4">
-                <div class="footer__feedback mb-164">
+            <div class="columns__col-1 mob-hidden"></div>
+            <div class="columns__col-4 columns__col-mob-4 order-mob--1">
+                <div class="footer__feedback mb-164 mbm-100">
                     <h3 class="title title--small">узнайте стоимость продвижения</h3>
-                    <form action="#" class="form">
+                    <form action="#" class="form" data-form>
                         <div class="form__wrapper">
-                            <label class="footer__item">
+                            <label class="form__item">
                                 <span>Ваш номер телефона:</span>
-                                <input type="tel" class="input" placeholder="+7 (___) ___-__-__">
+                                <input type="tel" class="input" name="TEL" placeholder="+7 (___) ___-__-__">
+                                <span class="form__error">Номер введен неверно!</span>
                             </label>
-                            <label class="footer__item">
+                            <label class="form__item">
                                 <span>Адрес Вашего сайта</span>
-                                <input type="text" class="input" placeholder="Адрес сайта">
+                                <input type="text" class="input" name="URL" placeholder="Адрес сайта">
+                                <span class="form__error">Ошибка!</span>
                             </label>
-                            <label class="footer__item">
+                            <label class="form__item">
                                 <span>Ваше имя</span>
-                                <input type="text" class="input" placeholder="Ваше имя">
+                                <input type="text" class="input" name="USER_NAME" placeholder="Ваше имя">
+                                <span class="form__error">Ошибка!</span>
                             </label>
                         </div>
                         <div class="form__footer">
@@ -49,7 +52,7 @@
                         e-mail
                         <span>info@dnt-digital.ru</span>
                     </a>
-                    <a href="./" class="logo">
+                    <a href="./" class="logo mob-hidden">
                         <img src="./assets/images/logo.svg" alt="">
                     </a>
                 </div>
@@ -60,3 +63,14 @@
         <img src="./assets/images/bear-2.png" alt="">
     </picture>
 </footer>
+
+<div class="modal" data-modal>
+    <div class="modal__picture">
+        <svg class="modal__icon">
+            <use xlink:href="./assets/sprite.svg#icon-tel"></use>
+        </svg>
+    </div>
+    <p class="modal__text">
+        Скоро наш менеджер вам перезвонит!
+    </p>
+</div>

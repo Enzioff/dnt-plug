@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 50px;
 
+  @include r($mobile) {
+    gap: 88px;
+  }
+
   &__features {
     padding: 56px 70px;
     background-color: $black;
@@ -10,12 +14,40 @@
     background-image: url("../assets/images/about-bg.svg");
     background-repeat: no-repeat;
     background-position: center right -39px;
+
+    @include r($mobile) {
+      position: relative;
+      padding: 0;
+      margin-left: -20px;
+      margin-right: -20px;
+      min-height: 1120px;
+      background: none;
+    }
+  }
+
+  &__decor {
+    display: none;
+
+    @include r($mobile) {
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+    }
   }
 
   &__info {
     display: flex;
     flex-direction: column;
     gap: 50px;
+
+    @include r($mobile) {
+      gap: 47px;
+      margin: 0 20px;
+      padding: 24px 20px 20px;
+      min-height: 718px;
+      background-color: $black;
+    }
   }
 
   &__list {
@@ -29,6 +61,14 @@
     font-size: 18px;
     font-weight: 300;
     line-height: 20.7px;
+
+    a {
+      transition: .2s linear;
+
+      &:hover {
+        color: $red;
+      }
+    }
   }
 
   &__presentation {
@@ -38,6 +78,14 @@
     gap: 158px;
     padding: 62px 62px 62px 137px;
     background-color: $black;
+
+    @include r($mobile) {
+      flex-direction: column;
+      gap: 14px;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding: 20px 20px 50px;
+    }
   }
 
   &__detail {
@@ -45,6 +93,18 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
+
+    @include r($mobile) {
+      align-items: stretch;
+      gap: 32px;
+      width: 100%;
+    }
+
+    .title {
+      @include r($mobile) {
+        text-align: center;
+      }
+    }
   }
 
   &__picture {
@@ -53,5 +113,11 @@
     margin-bottom: -106px;
     width: 545px;
     height: 434px;
+
+    @include r($mobile) {
+      margin: -100px -9px 0 0;
+      width: 366px;
+      height: 306px;
+    }
   }
 }

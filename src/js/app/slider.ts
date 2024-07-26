@@ -42,7 +42,7 @@ class Slider {
         const swiperOptions = {
             modules: [Navigation],
             slidesPerView: 'auto',
-            spaceBetween: 30,
+            spaceBetween: 20,
             navigation: {
                 prevEl: this.buttonPrev,
                 nextEl: this.buttonNext,
@@ -51,6 +51,7 @@ class Slider {
             breakpoints: {
                 1199: {
                     slidesPerView: this.slidesCount ? this.slidesCount : 1,
+                    spaceBetween: 30,
                 }
             }
         }

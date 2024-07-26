@@ -4,16 +4,31 @@
   padding-bottom: 57px;
   background-color: $night;
 
+  @include r($mobile) {
+    padding-top: 41px;
+    padding-bottom: 89px;
+  }
+
   &__feedback {
     display: flex;
     flex-direction: column;
     gap: 60px;
+
+    @include r($mobile) {
+      gap: 48px;
+    }
   }
 
   &__meta {
     display: grid;
     grid-template-columns: 228px 228px;
     gap: 60px 45px;
+
+    @include r($mobile) {
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+    }
   }
 
   &__decor {
@@ -23,5 +38,20 @@
     display: flex;
     width: 749px;
     height: 888px;
+
+    @include r($mobile) {
+      right: initial;
+      left: -86px;
+      width: 510px;
+      height: 604px;
+    }
+  }
+
+  &__picture {
+    display: flex;
+    @include r($mobile) {
+      width: 438px;
+      height: 440px;
+    }
   }
 }

@@ -6,16 +6,18 @@ class Form {
     agreeCheckbox: HTMLInputElement;
     url;
     inputs;
+    items;
+    modal;
 
     constructor(el: Element) {
         this.el = el;
         this.submit = this.el.querySelector('button[type="submit"]');
         this.agreeCheckbox = this.el.querySelector('.checkbox');
         this.url = this.el.getAttribute('action')
+        this.items = this.el.querySelectorAll('.form__item');
         this.inputs = [...Array.from(this.el.querySelectorAll('input')),
             ...Array.from(this.el.querySelectorAll('textarea'))]
-
-        console.log(this.inputs)
+        this.modal = document.querySelector('[data-modal]')
 
         this.init()
     }
@@ -31,15 +33,24 @@ class Form {
     }
 
     validate() {
-        let error = true;
+        let error = false;
 
-        this.inputs.forEach(input => {
-            if (input.value.length < 3 || !input.inputmask.isComplete()) {
+        this.items.forEach(item => {
+            const input = item.querySelector('input');
+            const errorMsg = item.querySelector('.form__error');
+
+            console.log(input.inputmask)
+            if (input.value.length < 3) {
                 error = true
+                errorMsg.classList.add('active');
+            } else if (input.inputmask && !input.inputmask.isComplete()) {
+                error = true
+                errorMsg.classList.add('active');
+            } else {
+                errorMsg.classList.remove('active');
             }
         })
 
-        console.log('ошибка')
         if (!error) {
             this.sendData();
         }
@@ -48,13 +59,28 @@ class Form {
     getData() {
         const data = new FormData();
 
+        this.inputs.forEach(input => {
+            data.append(input.name, input.value)
+        })
+
+        return data;
     }
 
     sendData() {
         axios.post(this.url, this.getData())
             .then(response => response.data)
-            .then(data => console.log(data))
-            .catch(e => console.error(e));
+            .then(data => {
+                this.inputs.forEach(input => {
+                    input.value = '';
+                })
+                this.modal.classList.add('active')
+                setTimeout(() => {
+                    this.modal.classList.remove('active')
+                }, 3000)
+            })
+            .catch(e => {
+                console.error(e)
+            });
     }
 
     changeBtnStatus() {

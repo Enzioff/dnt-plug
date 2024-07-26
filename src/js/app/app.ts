@@ -51,7 +51,8 @@ class App {
             qr.classList.add('active')
         }, 2000)
 
-        qrClose.addEventListener('click', () => {
+        qrClose.addEventListener('click', (evt) => {
+            evt.preventDefault();
             if (qr.classList.contains('active')) {
                 qr.classList.remove('active')
             }
